@@ -46,5 +46,6 @@ Thumbs.db
 /obj
 /bin
 /wwwroot
+/.vs
 
 package-lock.json

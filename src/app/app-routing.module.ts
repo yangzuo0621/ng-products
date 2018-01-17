@@ -2,10 +2,16 @@ import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { FaqComponent } from './faq/faq.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 const routes: Routes = [
   { path: 'how-it-works', component: HowItWorksComponent },
-  { path: 'faq', component: FaqComponent }
+  {
+    path: 'products',
+    loadChildren: 'app/products/products.module#ProductsModule'
+  },
+  { path: 'faq', component: FaqComponent },
+  { path: '', component: MainContentComponent },
 ];
 
 @NgModule({

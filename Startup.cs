@@ -34,6 +34,9 @@ namespace ng_products
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseDefaultFiles();
+            app.UseStaticFiles();
+            
             app.UseMvc();
         }
     }

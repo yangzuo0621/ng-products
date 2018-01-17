@@ -16,7 +16,8 @@ import {
   ProductsService
 } from './common/index';
 
-declare let jQuery: Object;
+// declare let jQuery: Object;
+const jQuery: Object = window['$'];
 
 @NgModule({
   declarations: [

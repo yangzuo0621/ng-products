@@ -9,6 +9,7 @@ import { NavComponent } from './nav/nav.component';
 import { ProductsService } from './common/products.service';
 import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 import { FaqComponent } from './faq/faq.component';
+import { FooterComponent } from './footer/footer.component';
 
 
 @NgModule({
@@ -16,7 +17,8 @@ import { FaqComponent } from './faq/faq.component';
     AppComponent,
     NavComponent,
     HowItWorkComponent,
-    FaqComponent
+    FaqComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -7,12 +7,14 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ProductsService } from './common/products.service';
+import { HowItWorkComponent } from './how-it-work/how-it-work.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    NavComponent
+    NavComponent,
+    HowItWorkComponent
   ],
   imports: [
     BrowserModule,

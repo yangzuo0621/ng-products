@@ -4,7 +4,7 @@
 
 <div class="ui basic segment container">
   <div class="ui three stackable cards">
-    <div class="card" *ngFor="let item of category.data">
+    <a class="card" *ngFor="let item of category.data" [routerLink]="['/products/details']">
       <div class="image">
         <img src="assets/images/{{item.img}}">
       </div>
@@ -20,6 +20,6 @@
       <div class="ui bottom attached blue button">
         <i class="browser icon"></i>
         View Products</div>
-    </div>
+      </a>
   </div>
 </div>

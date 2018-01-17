@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ProductsService } from '../common/products.service';
+import { ProductsService } from '../common/index';
 
 @Component({
   selector: 'app-nav',
@@ -8,17 +8,17 @@ import { ProductsService } from '../common/products.service';
 })
 export class NavComponent implements OnInit {
   products: string[];
-  categories: string[];
+  vendors: string[];
 
-  constructor(private productService: ProductsService) { }
+  constructor(private productsService: ProductsService) { }
 
   ngOnInit() {
-    this.productService.getProducts().subscribe(data => {
+    this.productsService.getProducts().subscribe(data => {
       this.products = <string[]> data;
     });
 
-    this.productService.getCategories().subscribe(data => {
-      this.categories = <string[]> data;
+    this.productsService.getVendors().subscribe(data => {
+      this.vendors = <string[]> data;
     });
   }
 

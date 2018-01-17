@@ -1,19 +1,19 @@
 <div class="ui attached stackable inverted borderless menu">
-  <!-- <a class="item">
+  <a class="item" [routerLink]="['/']">
     <img class="ui small image" src="images/logo_css.png">
-  </a> -->
+  </a>
   <div class="ui simple dropdown right item">
     <a [routerLink]="['/products']">PRODUCTS</a>
     <i class="dropdown icon"></i>
     <div class="menu">
-      <a *ngFor="let product of products" class="item">{{product}}</a>
+      <a *ngFor="let product of products" [routerLink]="['/products/category']" class="item">{{ product | uppercase }}</a>
     </div>
   </div>
   <div class="ui simple dropdown item">
     VENDOR INFORMATION
     <i class="dropdown icon"></i>
     <div class="menu">
-      <a *ngFor="let category of categories" class="item">{{category}}</a>
+      <a *ngFor="let vendor of vendors" [routerLink]="['/products/details']" class="item">{{ vendor | uppercase }}</a>
     </div>
   </div>
   <a class="item test" routerLinkActive="active" [routerLink]="['/how-it-works']">HOW IT WORKS</a>

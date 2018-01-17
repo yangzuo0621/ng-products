@@ -14,4 +14,8 @@ export class ProductsService {
     return this.http.get('api/categories');
   }
 
+  getVendors() {
+    return this.http.get('api/vendors');
+  }
+
 }

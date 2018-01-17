@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ProductsService } from '../common/index';
 
 @Component({
   selector: 'app-main-content',
@@ -6,10 +7,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./main-content.component.css']
 })
 export class MainContentComponent implements OnInit {
+  categories: string[];
 
-  constructor() { }
+  constructor(private productService: ProductsService) { }
 
   ngOnInit() {
+    this.productService.getCategories().subscribe(data => {
+      this.categories = <string[]>data;
+    });
   }
 
 }

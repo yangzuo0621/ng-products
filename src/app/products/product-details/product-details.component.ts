@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
-
-declare var jQuery: any;
+import { Component, OnInit, Inject } from '@angular/core';
+import { JQUERY_TOKEN } from '../../common/jquery.service';
 
 @Component({
   selector: 'app-product-details',
@@ -9,10 +8,10 @@ declare var jQuery: any;
 })
 export class ProductDetailsComponent implements OnInit {
 
-  constructor() { }
+  constructor(@Inject(JQUERY_TOKEN) private $: any) { }
 
   ngOnInit() {
-    jQuery('.menu .item').tab();
+    this.$('.menu .item').tab();
   }
 
 }

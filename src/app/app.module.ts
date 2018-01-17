@@ -10,6 +10,7 @@ import { ProductsService } from './common/products.service';
 import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { FaqComponent } from './faq/faq.component';
 import { FooterComponent } from './footer/footer.component';
+import { MainContentComponent } from './main-content/main-content.component';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { FooterComponent } from './footer/footer.component';
     NavComponent,
     HowItWorksComponent,
     FaqComponent,
-    FooterComponent
+    FooterComponent,
+    MainContentComponent
   ],
   imports: [
     BrowserModule,

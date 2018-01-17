@@ -7,7 +7,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { NavComponent } from './nav/nav.component';
 import { ProductsService } from './common/products.service';
-import { HowItWorkComponent } from './how-it-work/how-it-work.component';
+import { HowItWorksComponent } from './how-it-works/how-it-works.component';
 import { FaqComponent } from './faq/faq.component';
 import { FooterComponent } from './footer/footer.component';
 
@@ -16,7 +16,7 @@ import { FooterComponent } from './footer/footer.component';
   declarations: [
     AppComponent,
     NavComponent,
-    HowItWorkComponent,
+    HowItWorksComponent,
     FaqComponent,
     FooterComponent
   ],

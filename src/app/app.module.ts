@@ -15,6 +15,7 @@ import {
   JQUERY_TOKEN,
   ProductsService
 } from './common/index';
+import { VendorsComponent } from './vendors/vendors.component';
 
 // declare let jQuery: Object;
 const jQuery: Object = window['$'];
@@ -26,7 +27,8 @@ const jQuery: Object = window['$'];
     HowItWorksComponent,
     FaqComponent,
     FooterComponent,
-    MainContentComponent
+    MainContentComponent,
+    VendorsComponent
   ],
   imports: [
     BrowserModule,

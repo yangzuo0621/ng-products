@@ -1,0 +1,21 @@
+<div class="ui center aligned blue inverted very padded basic segment">
+  <h1>Vendor information</h1>
+</div>
+
+<div class="ui fluid container">
+  <p class="description">A number of different vendors of standard CubeSat components and subsystems are offering their product on CubeSatShop.com.
+    On this page you can find an overview of these companies and what they offer on this website.</p>
+</div>
+
+<div class="ui five column grid container">
+  <div *ngFor="let vendor of vendors" class="column">
+    <div class="ui basic segment">
+      <a class="ui small image">
+        <img src="assets/images/vendor\{{vendor.imageUrl}}">
+      </a>
+      <h4 class="ui header">
+        {{vendor.vendorName}}
+      </h4>
+    </div>
+  </div>
+</div>

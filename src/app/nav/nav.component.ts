@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ProductsService } from '../common/index';
+import { IVendor } from '../vendors/shared/vendor.model';
 
 @Component({
   selector: 'app-nav',
@@ -8,7 +9,7 @@ import { ProductsService } from '../common/index';
 })
 export class NavComponent implements OnInit {
   products: string[];
-  vendors: string[];
+  vendors: IVendor[];
 
   constructor(private productsService: ProductsService) { }
 
@@ -18,7 +19,7 @@ export class NavComponent implements OnInit {
     });
 
     this.productsService.getVendors().subscribe(data => {
-      this.vendors = <string[]> data;
+      this.vendors = <IVendor[]> data;
     });
   }
 

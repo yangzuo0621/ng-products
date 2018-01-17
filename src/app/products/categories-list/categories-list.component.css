@@ -1,0 +1,12 @@
+.ui.segment {
+  margin-top: 15px;
+}
+
+.description {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.card .image {
+  background-color: white;
+}

@@ -7,7 +7,7 @@ namespace ng_products.Controllers {
     public class ProductsController : Controller {
 
         [HttpGet]
-        public IEnumerable<string> Get () {
+        public IEnumerable<string> Get() {
             return new string[] {
                 "Antenna systems",
                 "Attitude actuators",
@@ -32,7 +32,7 @@ namespace ng_products.Controllers {
     [Route ("api/[controller]")]
     public class VendorsController : Controller {
         [HttpGet]
-        public IEnumerable<string> Get () {
+        public IEnumerable<string> Get() {
             return new string[] {
                 "CRYSTALSPACE",
                 "DHV TECHNOLOGY",
@@ -62,7 +62,7 @@ namespace ng_products.Controllers {
     public class CategoriesController : Controller {
 
         [HttpGet]
-        public IEnumerable<string> Get () {
+        public IEnumerable<string> Get() {
             return new string[] {
                 "Antenna systems",
                 "Attitude actuators",

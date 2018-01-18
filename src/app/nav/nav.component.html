@@ -2,22 +2,24 @@
   <!-- <a class="item" [routerLink]="['/']">
     <img class="ui small image" src="images/logo_css.png">
   </a> -->
-  <a class="right item" routerLinkActive="active" [routerLink]="['/']" [routerLinkActiveOptions]="{ exact: true }">Home</a>
-  <div class="ui simple dropdown item">
-    <a [routerLink]="['/products']">PRODUCTS</a>
-    <i class="dropdown icon"></i>
-    <div class="menu">
-      <a *ngFor="let product of products" [routerLink]="['/products/category']" class="item">{{ product | uppercase }}</a>
+  <div class="ui container">
+    <a class="item" routerLinkActive="active" [routerLink]="['/']" [routerLinkActiveOptions]="{ exact: true }">Home</a>
+    <div class="ui simple dropdown item">
+      <a [routerLink]="['/products']">PRODUCTS</a>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a *ngFor="let product of products" [routerLink]="['/products/category']" class="item">{{ product | uppercase }}</a>
+      </div>
     </div>
-  </div>
-  <div class="ui simple dropdown item">
-    <a [routerLink]="['/products']">VENDOR INFORMATION</a>
-    <i class="dropdown icon"></i>
-    <div class="menu">
-      <a *ngFor="let vendor of vendors" [routerLink]="['/products/details']" class="item">{{ vendor.vendorName | uppercase }}</a>
+    <div class="ui simple dropdown item">
+      <a [routerLink]="['/products']">VENDOR INFORMATION</a>
+      <i class="dropdown icon"></i>
+      <div class="menu">
+        <a *ngFor="let vendor of vendors" [routerLink]="['/products/details']" class="item">{{ vendor.vendorName | uppercase }}</a>
+      </div>
     </div>
+    <a class="item" routerLinkActive="active" [routerLink]="['/how-it-works']">HOW IT WORKS</a>
+    <a class="item" routerLinkActive="active" [routerLink]="['/faq']">FAQ</a>
+    <a class="item">INQUIRY LIST(0)</a>
   </div>
-  <a class="item" routerLinkActive="active" [routerLink]="['/how-it-works']">HOW IT WORKS</a>
-  <a class="item" routerLinkActive="active" [routerLink]="['/faq']">FAQ</a>
-  <a class="item">INQUIRY LIST(0)</a>
 </div>

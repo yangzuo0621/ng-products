@@ -11,9 +11,9 @@ const routes: Routes = [
     path: 'products',
     loadChildren: 'app/products/products.module#ProductsModule'
   },
-  { path: 'vendors', component: VendorsComponent }
+  { path: 'vendors', component: VendorsComponent },
   { path: 'faq', component: FaqComponent },
-  { path: '', component: MainContentComponent },
+  { path: '', component: MainContentComponent }
 ];
 
 @NgModule({

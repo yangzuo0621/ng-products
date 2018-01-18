@@ -6,7 +6,7 @@ namespace ng_products.Controllers {
     [Route ("api/[controller]")]
     public class VendorsController : Controller {
         [HttpGet]
-        public IEnumerable<Vendor> Get () {
+        public IEnumerable<Vendor> Get() {
             return new Vendor[] {
                 new Vendor { Id = 1, VendorName = "CrystalSpace", ImageUrl = "crystal_space.png" },
                 new Vendor { Id = 2, VendorName = "CubeSpace", ImageUrl = "cube_space.jpg" },

@@ -2,9 +2,8 @@ using System.Collections.Generic;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ng_products.Controllers {
-
     [Route ("api/[controller]")]
-    public class ProductsController : Controller {
+    public class CategoriesController : Controller {
 
         [HttpGet]
         public IEnumerable<string> Get() {

@@ -1,1 +1,61 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* .ui.segment.hero .scroll {
+  padding-top: 5rem;
+  text-transform: uppercase;
+  letter-spacing: 0.2rem;
+}
+
+.ui.inverted.segment.hero {
+  min-height: 700px;
+  background-size: cover;
+  background-image: url('https://upload.wikimedia.org/wikipedia/commons/b/bf/Aaron_Swartz_at_Boston_Wikipedia_Meetup,_2009-08-18.jpg');
+  background-color: rgba(0, 0, 0, 0.25);
+  background-blend-mode: multiply;
+}
+
+.hero .container h1.header {
+  margin-bottom: 0px;
+  text-transform: uppercase;
+  letter-spacing: 0.5rem;
+  font-size: 5rem;
+  margin-top: 20rem;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.hero .container h2.header {
+  font-size: 2rem;
+  color: white;
+  margin-top: 0;
+  font-weight: 100;
+  font-family: serif;
+  letter-spacing: 0.1rem;
+  text-shadow: 0 0px 5px rgba(0, 0, 0, 0.3);
+}
+
+.ui.vertical.segment.content {
+  padding: 4rem 0;
+}
+
+.ui.vertical.segment.content h3 {
+  font-size: 2.4rem;
+}
+
+.ui.vertical.segment.content p {
+  font-size: 1.5rem;
+}
+
+.ui.vertical.segment.footer {
+  padding-top: 4rem;
+}
+
+.footer .em {
+  font-style: italic;
+  font-size: 1.3rem;
+  margin: 2rem 0;
+}
+
+.disclaimer {
+  text-align: right;
+  margin: 3rem 1rem 0 0;
+} */
